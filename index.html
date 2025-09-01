@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research & Innovation Sitemap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      color: #0078d4;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+    li {
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    .nested {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .caret::before {
+      content: "▶";
+      color: #0078d4;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .caret-down::before {
+      content: "▼";
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #0078d4;
+    }
+  </style>
+</head>
+<body>
+  <h2>Research & Innovation Sitemap</h2>
+  <ul>
+    <li><span class="caret">Research & Innovation</span>
+      <ul class="nested">
+        <li><span class="caret">Knowledge Exchange</span>
+          <ul class="nested">
+            <li><a href="#">2023–24 Policy and Participatory Research Funding</a></li>
+            <li><a href="#">Be Curious</a></li>
+            <li><a href="#">Funding Opportunities</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Leeds Cancer Research Centre</span>
+          <ul class="nested">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">LCRC Membership</a></li>
+            <li><a href="#">News Page Template</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Leeds Institute for Data Analytics (LIDA)</span>
+          <ul class="nested">
+            <li><a href="#">LIDA Induction</a></li>
+            <li><a href="#">Data Science & AI Training Resources</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Leeds Institute of Health Sciences (LIHS)</span>
+          <ul class="nested">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Strategies</a></li>
+            <li><a href="#">Transcription</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Nexus – Innovation Community</span>
+          <ul class="nested">
+            <li><a href="#">Celebrating Five Years of Nexus</a></li>
+            <li><a href="#">Investment Zone</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Priestley Centre for Climate Futures</span>
+          <ul class="nested">
+            <li><a href="#">UNFCCC and COP</a></li>
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Templates</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Culture</span>
+          <ul class="nested">
+            <li><a href="#">Awards for Open Research Practices</a></li>
+            <li><a href="#">Pulse Surveys</a></li>
+            <li><a href="#">Transforming Lives Through Open Research</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Excellence Framework 2029</span>
+          <ul class="nested">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Glossary</a></li>
+            <li><a href="#">Governance</a></li>
+            <li><a href="#">REF2029 Code of Practice</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Farm</span>
+          <ul class="nested">
+            <li><a href="#">Net Zero Farm</a></li>
+            <li><a href="#">FixOurFood Trials</a></li>
+            <li><a href="#">Templates</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Operations</span>
+          <ul class="nested">
+            <li><a href="#">Award Acceptance</a></li>
+            <li><a href="#">Audit</a></li>
+            <li><a href="#">Contracts</a></li>
+            <li><a href="#">Kristal Navigation</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Quality & Integrity</span>
+          <ul class="nested">
+            <li><a href="#">Academic Freedom</a></li>
+            <li><a href="#">Integrity</a></li>
+            <li><a href="#">Trusted Research Guidance</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Research Support</span>
+          <ul class="nested">
+            <li><a href="#">Funding Opportunities</a></li>
+            <li><a href="#">Eligibility</a></li>
+            <li><a href="#">Submission Checklist</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Technicians Network</span>
+          <ul class="nested">
+            <li><a href="#">Technicians Week</a></li>
+            <li><a href="#">Impact Award</a></li>
+            <li><a href="#">Templates</a></li>
+          </ul>
+        </li>
+        <li><span class="caret">Think Break Create</span>
+          <ul class="nested">
+            <li><a href="#">Landing Page</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    document.querySelectorAll(".caret").forEach(function(el) {
+      el.addEventListener("click", function() {
+        const nested = this.parentElement.querySelector(".nested");
+        if (nested) {
+          nested.classList.toggle("active");
+          this.classList.toggle("caret-down");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
